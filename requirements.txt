@@ -1,0 +1,3 @@
+# Editable install with no version control (app-main==0.1)
+-e /home/jaime/app_ventas
+click==8.1.7
