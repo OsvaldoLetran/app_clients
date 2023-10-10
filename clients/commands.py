@@ -29,7 +29,7 @@ def clients():
     '-p', '--number',
     type = str,
     prompt = True,
-    help = "Client's number")
+    help = "Client's phone number")
 @click.pass_context
 def create(ctx, name, address, email, number):
     """Creates a new client"""
@@ -45,7 +45,7 @@ def read_list(ctx):
     client_service = ClientService(ctx.obj['clients_table'])
     clients_list = client_service.list_clients()
 
-    click.echo(f'|        id        |  NAME  |  ADDRESS  |  EMAIL  | NUMBER')
+    click.echo(f'|        id        |  NAME  |  ADDRESS  |  EMAIL  | PHONE NUMBER')
     click.echo('-' * 60)
 
     for client in clients_list:
@@ -82,7 +82,7 @@ def _updated_client_flow(client):
     client.name = click.prompt('New Name', type = str, default = client.name)
     client.address = click.prompt('New Address', type = str, default = client.address)
     client.email = click.prompt('New Email', type = str, default = client.email)
-    client.number = click.prompt('New Number', type = str, default = client.number)
+    client.number = click.prompt('New Phone Number', type = str, default = client.number)
 
     return client
 

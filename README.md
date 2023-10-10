@@ -1,8 +1,9 @@
 # App Clients
 
-`Install`: You must have PIP to install this app. In your terminal locate the folder where you donwload the code. (Before install this I recommend to you actvate a venv)
+`Install`: You must have PIP to install this app. In your terminal locate the folder where you donwload the code.
+(Before install this I recommend to you actvate a venv)
 
-`Install the application with`: 
+Install the application with: 
 
 ```sh
 pip install app_main
@@ -14,7 +15,9 @@ or if you want to edit the code and see changes in real time:
 pip install --editable .
 ```
 
-`Commands`: To ask for help 
+### Commands
+
+`To ask for help`: 
 
 ```sh
 app_main --help
